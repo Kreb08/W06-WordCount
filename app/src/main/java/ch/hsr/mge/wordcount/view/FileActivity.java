@@ -70,12 +70,12 @@ public class FileActivity extends AppCompatActivity {
         List<WordCount> counters = analyzeText(text);
         WordCountResult result = new WordCountResult(holder, counters);
 
-        Intent intent = new Intent(this, WordListActivity.class);
+        Intent showResultIntent = new Intent(this, WordListActivity.class);
         Bundle bundle = new Bundle();
         bundle.putSerializable(KEY_WORD_RESULT, result);
-        intent.putExtras(bundle);
+        showResultIntent.putExtras(bundle);
 
-        startActivity(intent);
+        startActivity(showResultIntent);
     }
 
     /**
