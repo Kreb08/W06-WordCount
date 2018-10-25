@@ -63,8 +63,7 @@ public class WordCounter implements IWordCounter {
 		for (int i=0; i<end; i++) {
 			result.add(list.get(i));
 		}
-		
+
 		return result;
 	}
-
 }
